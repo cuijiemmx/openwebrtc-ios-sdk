@@ -13,13 +13,13 @@ Pod::Spec.new do |s|
   }
   s.source_files = "SDK/**/*.{h,m}"
   s.resources = "Resources/**"
-  s.dependency 'OpenWebRTC'
+  #s.dependency 'OpenWebRTC'
   #s.resource = { :http => "https://github.com/EricssonResearch/openwebrtc/blob/master/bridge/client/sdp.js" }
   s.libraries = "c++", "resolv"
   s.framework = "OpenWebRTC", "WebKit"
   s.requires_arc = true
 
   s.xcconfig = {
-    'HEADER_SEARCH_PATHS' => '"${PODS_ROOT}/Headers/Public/**"'
+    'HEADER_SEARCH_PATHS' => '"${PODS_ROOT}/Headers/Public/**" "/Users/casa/Library/Developer/OpenWebRTC/iPhone.sdk/OpenWebRTC.framework/Headers"'
   }
 end
