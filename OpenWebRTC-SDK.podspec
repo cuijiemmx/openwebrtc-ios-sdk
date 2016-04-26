@@ -20,6 +20,6 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.xcconfig = {
-    'HEADER_SEARCH_PATHS' => '"${PODS_ROOT}/Headers/Public/**" "/Users/casa/Library/Developer/OpenWebRTC/iPhone.sdk/OpenWebRTC.framework/Headers"'
+    'HEADER_SEARCH_PATHS' => '"${PODS_ROOT}/Headers/Public/**" "/Users/casa/Library/Developer/OpenWebRTC/iPhone.sdk/OpenWebRTC.framework/Headers/**"'
   }
 end
